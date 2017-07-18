@@ -81,9 +81,9 @@ public class ItemCursorAdapter extends CursorAdapter {
             @Override
             public void onClick(View v) {
 
-                int quantity = cursor.getInt(cursor.getColumnIndex(COLUMN_ITEM_QUANTITY));
-                if (quantity > 0) {
 
+                if (quantity > 0) {
+                    quantity--;
                    // Log.v("" + id, "" + quantity);
                    // int id = cursor.getInt(cursor.getColumnIndex(_ID));
                     updateQuantity(id);
